@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">WBPOLehotsky</string>
     <string name="mainfragment">MainFragment</string>
+
+    <string name="registrationTitle">Registration</string>
+
+    <string name="userListTitle">User List</string>
+
 </resources>
