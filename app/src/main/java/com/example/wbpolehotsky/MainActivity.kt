@@ -2,12 +2,13 @@ package com.example.wbpolehotsky
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.wbpolehotsky.ui.main.MainFragment
+import androidx.databinding.DataBindingUtil.setContentView
+import com.example.wbpolehotsky.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_registration)
+        setContentView<ActivityMainBinding>(this, R.layout.activity_main)
     }
 }
