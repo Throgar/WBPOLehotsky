@@ -2,8 +2,16 @@
     <string name="app_name">WBPOLehotsky</string>
     <string name="mainfragment">MainFragment</string>
 
+    <!--Registration-->
     <string name="registrationTitle">Registration</string>
+    <string name="registrateBtn">Registrate</string>
+    <string name="name">Name</string>
+    <string name="year">Years</string>
+    <string name="color">Color</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 
     <string name="userListTitle">User List</string>
+
 
 </resources>

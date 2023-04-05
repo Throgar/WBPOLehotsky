@@ -1,4 +1,4 @@
-package com.example.wbpolehotsky.ui.main
+package com.example.wbpolehotsky.main
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.example.wbpolehotsky.ui.api
+package com.example.wbpolehotsky.api
 
 sealed class ResponseWrapper<out T> {
     data class Success<T>(val value: T) : ResponseWrapper<T>()
