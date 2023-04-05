@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="registrationFragment"
-            type="com.example.wbpolehotsky.ui.RegistrationFragment"
-            />
+            type="com.example.wbpolehotsky.ui.RegistrationFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,6 +14,7 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +30,54 @@
                 app:titleTextColor="@color/orange" />
 
         </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/regContainer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/appBar"
+            app:layout_constraintBottom_toTopOf="@id/sendRegBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/orange"
+            android:layout_margin="@dimen/huge18"
+            >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                app:placeholderText="Name"
+                />
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Year"
+                app:placeholderText="Year"
+                />
+            <EditText
+                android:id="@+id/color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Color"
+                app:placeholderText="Color"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sendRegBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large12"
+            android:text="@string/registrateBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
