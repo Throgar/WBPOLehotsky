@@ -6,7 +6,7 @@ sealed class ResponseWrapper<out T> {
     data class Idle<T>(val value: T? = null) : ResponseWrapper<T>()
     data class Error(
         val code: Int? = null,
-        val message: String? = null,
+        val error: String? = null,
         val throwable: Throwable? = null
     ) : ResponseWrapper<Nothing>()
 }
